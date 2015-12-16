@@ -2,7 +2,7 @@ package tdd.by.example.money;
 
 public class Dollar {
 
-    public int amount = 10;
+    public int amount = 5 * 2;
 
     public Dollar(int amount) {
         // TODO Auto-generated constructor stub
