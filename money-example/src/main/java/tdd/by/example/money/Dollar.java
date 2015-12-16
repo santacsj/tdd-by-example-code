@@ -6,4 +6,9 @@ public class Dollar {
         // TODO Auto-generated constructor stub
     }
 
+    public void times(int multiplier) {
+        // TODO Auto-generated method stub
+
+    }
+
 }
