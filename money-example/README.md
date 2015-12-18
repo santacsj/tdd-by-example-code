@@ -5,3 +5,5 @@
 - [ ] Money rounding?
 - [x] equals()
 - [ ] hashCode()
+- [ ] Equal null
+- [ ] Equals object
