@@ -3,3 +3,7 @@
 - [ ] Make "amount" private
 - [x] Dollar side-effects?
 - [ ] Money rounding?
+- [x] equals()
+- [ ] hashCode()
+- [ ] Equal null
+- [ ] Equals object
