@@ -1,6 +1,6 @@
 package tdd.by.example.money;
 
-public abstract class Money {
+public class Money {
 
     static Money dollar(int amount) {
         return new Dollar(amount, "USD");
@@ -18,7 +18,9 @@ public abstract class Money {
         this.currency = currency;
     }
 
-    abstract Money times(int multiplier);
+    Money times(int multiplier) {
+        return null;
+    }
 
     String currency() {
         return currency;
