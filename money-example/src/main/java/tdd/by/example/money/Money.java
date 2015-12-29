@@ -7,7 +7,7 @@ public class Money {
     }
 
     static Money franc(int amount) {
-        return new Franc(amount, "CHF");
+        return new Money(amount, "CHF");
     }
 
     protected int amount;
