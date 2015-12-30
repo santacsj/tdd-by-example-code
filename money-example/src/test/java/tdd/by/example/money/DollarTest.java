@@ -2,6 +2,8 @@ package tdd.by.example.money;
 
 import static org.junit.Assert.*;
 
+import java.beans.Expression;
+
 import org.junit.Test;
 
 public class DollarTest {
@@ -29,6 +31,7 @@ public class DollarTest {
     @Test
     public void testSimpleAddition() {
 
+        Expression sum = five.plus(five);
         Bank bank = new Bank();
         Money reduced = bank.reduce(sum, "USD");
         assertEquals(Money.dollar(10), reduced);
