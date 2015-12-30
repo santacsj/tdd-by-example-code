@@ -1,6 +1,10 @@
 package tdd.by.example.money;
 
+import java.util.Hashtable;
+
 public class Bank {
+
+    private Hashtable<Pair, Integer> rates = new Hashtable<Pair, Integer>();
 
     Money reduce(Expression source, String to) {
         return source.reduce(this, to);
