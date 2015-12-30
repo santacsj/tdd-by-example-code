@@ -5,4 +5,7 @@ public class Sum {
     Money augend;
     Money addend;
 
+    public Sum(Money augend, Money addend) {
+        // TODO Auto-generated constructor stub
+    }
 }
