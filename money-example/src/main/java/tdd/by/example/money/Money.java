@@ -1,6 +1,6 @@
 package tdd.by.example.money;
 
-public class Money {
+public class Money implements Expression {
 
     static Money dollar(int amount) {
         return new Money(amount, "USD");
