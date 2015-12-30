@@ -11,7 +11,7 @@ public class Bank {
     }
 
     public void addRate(String from, String to, int rate) {
-        // TODO Auto-generated method stub
+        rates.put(new Pair(from, to), rate);
     }
 
     int rate(String from, String to) {
