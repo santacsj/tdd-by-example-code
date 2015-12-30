@@ -26,6 +26,10 @@ public class Money {
         return currency;
     }
 
+    Money plus(Money addend) {
+        return new Money(amount + addend.amount, currency);
+    }
+
     @Override
     public boolean equals(Object obj) {
         Money money = (Money) obj;
@@ -36,4 +40,5 @@ public class Money {
     public String toString() {
         return amount + " " + currency;
     }
+
 }
