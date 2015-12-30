@@ -1,6 +1,6 @@
 package tdd.by.example.money;
 
-public class Money {
+public class Money implements Expression {
 
     static Money dollar(int amount) {
         return new Money(amount, "USD");
@@ -26,6 +26,10 @@ public class Money {
         return currency;
     }
 
+    Expression plus(Money addend) {
+        return new Money(amount + addend.amount, currency);
+    }
+
     @Override
     public boolean equals(Object obj) {
         Money money = (Money) obj;
@@ -36,4 +40,5 @@ public class Money {
     public String toString() {
         return amount + " " + currency;
     }
+
 }
