@@ -2,8 +2,6 @@ package tdd.by.example.money;
 
 import static org.junit.Assert.*;
 
-import java.beans.Expression;
-
 import org.junit.Test;
 
 public class DollarTest {
