@@ -33,6 +33,11 @@ class TestSuite:
         self.tests = []
     def add(self, test):
         self.tests.append(test)
+    def run(self):
+        result = TestResult()
+        for test in self.tests:
+            test.run(result)
+        return result
 
 class WasRun(TestCase):
     def setUp(self):
@@ -65,7 +70,7 @@ class TestCaseTest(TestCase):
     def testSuite(self):
         suite = TestSuite()
         suite.add(WasRun("testMethod"))
-        suite.add(WarRun("testBrokenMethod"))
+        suite.add(WasRun("testBrokenMethod"))
         result = suite.run()
         assert("2 run, 1 failed" == result.summary())
 
